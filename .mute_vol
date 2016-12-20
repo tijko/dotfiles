@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+
+amixer sset Master 0% 
+amixer sset Headphone 0%
+amixer sset Speaker 0%
+amixer sset PCM 0%
