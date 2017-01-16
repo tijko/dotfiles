@@ -35,5 +35,5 @@ fi
 export ANDROID_HOME=/opt/android-sdk
 
 export HISTSIZE=1000
-export HISTTIMEFORMAT="%F %T: "
-export HISTCONTROL=ignoreboth:erasedups
+export HISTCONTROL=ignoredups:erasedups
+export HISTTIMEFORMAT='%F %T: '
