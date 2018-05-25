@@ -14,6 +14,6 @@ fi
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # ...or the Window Manager of your choice
-conky | while read -r; do xsetroot -name "$REPLY"; done &
+exec slstatus
 exec dwm 
 wmname LG3D
