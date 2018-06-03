@@ -21,6 +21,7 @@ alias flash='~/.flash_kill'
 alias net='~/.foreign_network'
 alias scan='sudo iwlist wlp6s0 scan > wifi.txt'
 alias up='sudo ip link set wlp6s0 up'
+alias copy='xclip -o | xclip -i -selection clipboard'
 
 alias ls='ls --color=auto'
 function cd
