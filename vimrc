@@ -24,6 +24,8 @@ runtime! archlinux.vim
 :set relativenumber
 :colorscheme ron
 
+execute pathogen#infect()
+
 :let mapleader = ","
 
 :inoremap <leader><c-u> <esc>viw<s-U><esc>i
@@ -41,3 +43,6 @@ runtime! archlinux.vim
 :autocmd BufNewFile *.c :call CBoilerPlate()
 :autocmd BufNewFile *.py :call PyBoilerPlate()
 :autocmd BufNewFile *.sh :call ShBoilerPlate()
+
+nmap <F8> :TagbarToggle<CR>
+nmap <F9> :NERDTreeToggle<CR>
