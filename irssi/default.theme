@@ -179,5 +179,10 @@ abstracts = {
   dccquerynick = "$0-";
   dccaction = " (*dcc*) $0- %|";
 
-  sb_background = "%k$*%3"
+  sb = " %k[%k$*%k]%k";
+  sbmode = "(%k+%k$*)";
+  sb_act_sep = "%k$*";
+  sb_act_msg = "%g$*";
+  sb_act_text = "%k$*";
+  sb_background = "%k$*%3";
 };
