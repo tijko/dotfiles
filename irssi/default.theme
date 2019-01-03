@@ -19,7 +19,7 @@ abstracts = {
   error = "%R$0-%n";
 
   # channel name is printed
-  channel = "%Y$0-%n";
+  channel = "%Y$0-%Y";
 
   # nick is printed
   nick = "$0-%n";
@@ -52,7 +52,7 @@ abstracts = {
   chanhost = "{nickhost $0-}";
 
   # highlighted channel name is printed
-  channelhilight = "%c$0-%n";
+  channelhilight = "%Y$0-%n";
 
   # ban/ban exception/invite list mask is printed
   ban = "$0-";
