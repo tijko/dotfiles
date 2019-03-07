@@ -29,7 +29,7 @@ sub notify {
     $message =~ s/>/&gt;/g;
     $message =~ s/'/&apos;/g;
 
-    my $cmd = "EXEC - dunstify --action='replyActionreply'" .
+    my $cmd = "EXEC - dunstify --action='replyAction,reply'" .
 	" '" . $summary . "'" .
 	" '" . $message . "'";
 
