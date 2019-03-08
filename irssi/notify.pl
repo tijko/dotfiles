@@ -31,7 +31,7 @@ sub notify {
 
     my $cmd = "EXEC - dunstify --action='replyAction,reply'" .
 	" '" . $summary . "'" .
-	" '" . $message . "'";
+	" '" . $message . "' &>/dev/null";
 
     $server->command($cmd);
 }
