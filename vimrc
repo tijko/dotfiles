@@ -16,13 +16,20 @@ runtime! archlinux.vim
 
 :syntax on
 
+:set expandtab
 :set tabstop=4
 :set shiftwidth=4
-:set noexpandtab
 :set hlsearch
 :set fileformat=unix
 :set relativenumber
+<<<<<<< HEAD
 :colorscheme desert 
+=======
+:set ruler
+:colorscheme ron
+>>>>>>> 5bb219022043083386a83e25979f507f7675938e
+
+execute pathogen#infect()
 
 :let mapleader = ","
 
@@ -34,10 +41,13 @@ runtime! archlinux.vim
 :nnoremap <leader>t :FileModTime()<cr>
 :nnoremap <leader><M-n> <C-w>w
 :nnoremap <leader>sv :source /etc/vimrc<cr>
-:nnoremap <leader>n :set tabstop=4 expandtab<cr>
+:nnoremap <leader>n :set tabstop=8 noexpandtab<cr>
 
 :onoremap p i(
 
 :autocmd BufNewFile *.c :call CBoilerPlate()
 :autocmd BufNewFile *.py :call PyBoilerPlate()
 :autocmd BufNewFile *.sh :call ShBoilerPlate()
+
+nmap <F8> :TagbarToggle<CR>
+nmap <F9> :NERDTreeToggle<CR>
