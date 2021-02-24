@@ -22,12 +22,10 @@ runtime! archlinux.vim
 :set hlsearch
 :set fileformat=unix
 :set relativenumber
-<<<<<<< HEAD
 :colorscheme desert 
 =======
 :set ruler
 :colorscheme ron
->>>>>>> 5bb219022043083386a83e25979f507f7675938e
 
 execute pathogen#infect()
 
