@@ -22,7 +22,7 @@ runtime! archlinux.vim
 :set hlsearch
 :set fileformat=unix
 :set relativenumber
-:colorscheme ron
+:colorscheme desert 
 
 :let mapleader = ","
 
