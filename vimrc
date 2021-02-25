@@ -16,21 +16,22 @@ runtime! archlinux.vim
 
 :syntax on
 
-:set expandtab
+execute pathogen#infect()
+
 :set tabstop=4
 :set shiftwidth=4
 :set hlsearch
+:set expandtab
 :set fileformat=unix
-:set relativenumber
+:set number
 :colorscheme desert 
-=======
+:set clipboard=unnamed
 :set ruler
-:colorscheme ron
 
-execute pathogen#infect()
 
 :let mapleader = ","
-
+:let g:tagbar_width = 20
+:let g:NERDTreeWinSize = 20
 :inoremap <leader><c-u> <esc>viw<s-U><esc>i
 :inoremap <leader>jk <esc>
 
