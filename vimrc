@@ -28,7 +28,6 @@ execute pathogen#infect()
 :set clipboard=unnamed
 :set ruler
 
-
 :let mapleader = ","
 :let g:tagbar_width = 20
 :let g:NERDTreeWinSize = 20
@@ -37,16 +36,13 @@ execute pathogen#infect()
 
 :nnoremap <leader><c-u> viw<s-U>
 :nnoremap <leader>ev :vsplit /etc/vimrc<cr>
-:nnoremap <leader>t :FileModTime()<cr>
 :nnoremap <leader><M-n> <C-w>w
 :nnoremap <leader>sv :source /etc/vimrc<cr>
-:nnoremap <leader>n :set tabstop=8 noexpandtab<cr>
+:nnoremap <leader>n :set tabstop=4 expandtab<cr>
 
 :onoremap p i(
 
-:autocmd BufNewFile *.c :call CBoilerPlate()
 :autocmd BufNewFile *.py :call PyBoilerPlate()
-:autocmd BufNewFile *.sh :call ShBoilerPlate()
 
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :NERDTreeToggle<CR>
