@@ -6,17 +6,11 @@
 " make changes after sourcing archlinux.vim since it alters the value of the
 " 'compatible' option.
 
-" This line should not be removed as it ensures that various options are
-" properly set to work with the Vim-related packages.
-runtime! archlinux.vim
-
 " If you prefer the old-style vim functionalty, add 'runtime! vimrc_example.vim'
 " Or better yet, read /usr/share/vim/vim73/vimrc_example.vim or the vim manual
 " and configure vim to your own liking!
 
 :syntax on
-
-execute pathogen#infect()
 
 :set tabstop=4
 :set shiftwidth=4
@@ -29,8 +23,6 @@ execute pathogen#infect()
 :set ruler
 
 :let mapleader = ","
-:let g:tagbar_width = 20
-:let g:NERDTreeWinSize = 20
 :inoremap <leader><c-u> <esc>viw<s-U><esc>i
 :inoremap <leader>jk <esc>
 
@@ -41,8 +33,3 @@ execute pathogen#infect()
 :nnoremap <leader>n :set tabstop=4 expandtab<cr>
 
 :onoremap p i(
-
-:autocmd BufNewFile *.py :call PyBoilerPlate()
-
-nmap <F8> :TagbarToggle<CR>
-nmap <F9> :NERDTreeToggle<CR>
