@@ -18,7 +18,7 @@
 :set expandtab
 :set fileformat=unix
 :set number
-:colorscheme desert 
+:colorscheme evening
 :set clipboard=unnamed
 :set ruler
 
