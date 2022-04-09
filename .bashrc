@@ -24,21 +24,10 @@ alias up='sudo ip link set wlp6s0 up'
 alias copy='xclip -o | xclip -i -selection clipboard'
 
 alias ls='ls --color=auto'
-function cd
-{
-    builtin cd $1
-    pwd > ~/.cdir
-}
 
-PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$ '
+PS1="\e[2;33m\t\e[0m <\u\s> "
 export EDITOR='vim'
-
-if [ -f ~/.cdir ]
-then
-    cd $(cat ~/.cdir)
-fi
-
-export ANDROID_HOME=/opt/android-sdk
 
 export HISTSIZE=7000
 export HISTCONTROL=ignoredups:erasedups
