@@ -26,7 +26,7 @@ alias copy='xclip -o | xclip -i -selection clipboard'
 alias ls='ls --color=auto'
 
 #PS1='[\u@\h \W]\$ '
-PS1="\e[2;33m\t\e[0m <\u\s> "
+PS1='\e[2;33m\t\e[0m <\u\s> $PWD \$ '
 export EDITOR='vim'
 
 export HISTSIZE=7000
