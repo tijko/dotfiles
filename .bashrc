@@ -27,8 +27,9 @@ alias get-ip='curl https://ipinfo.io/ip; echo'
 
 alias ls='ls --color=auto'
 
+#PS1='[\u@\h \W]\$ '
+PS1="\e[2;33m\t\e[0m <\u\s> "
 export EDITOR='vim'
-
 
 export HISTSIZE=7000
 export HISTCONTROL=ignoredups:erasedups
