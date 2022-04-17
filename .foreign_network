@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-$(ip link set wlp6s0 up)
-$(iwconfig wlp6s0 essid $1)
-$(dhcpcd)
