@@ -1,7 +1,7 @@
 #
 # ~/.bashrc
 #
-
+export DIVE_VERSION=$(curl -s "https://api.github.com/repos/wgoodman/dive/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 export TERM=screen-256color
@@ -19,8 +19,10 @@ alias copy='xclip -o | xclip -i -selection clipboard'
 alias get-ip='curl https://ipinfo.io/ip; echo'
 
 alias ls='ls --color=auto'
+alias python="python2"
 
 export PS1='\e[0;33m\t\e[0m <\u\s> $PWD \$ '
+
 export EDITOR='vim'
 
 export HISTSIZE=7000
