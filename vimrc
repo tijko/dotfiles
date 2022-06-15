@@ -1,5 +1,5 @@
 " enable vim-pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+runtime /home/tijko/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 syntax on
