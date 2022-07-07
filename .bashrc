@@ -11,10 +11,6 @@ then
 	[[ -z "$TMUX" ]] && exec tmux 
 fi
 
-alias off='pkill mplayer'
-alias ipof='~/.ipof $1'
-alias scan='sudo iwlist wlp6s0 scan > wifi.txt'
-alias up='sudo ip link set wlp6s0 up'
 alias copy='xclip -o | xclip -i -selection clipboard'
 alias get-ip='curl https://ipinfo.io/ip; echo'
 
