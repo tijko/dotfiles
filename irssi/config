@@ -64,10 +64,10 @@ servers = (
     port = "6667";
   },
   {
-    address = "irc.freenode.net";
+    address = "irc.libera.chat";
     chatnet = "freenode";
-    port = "6667";
-    use_tls = "no";
+    port = "6697";
+    use_tls = "yes";
     tls_verify = "no";
     autoconnect = "yes";
   }
@@ -158,9 +158,7 @@ channels = (
   { name = "#ircsource"; chatnet = "IRCSource"; autojoin = "No"; },
   { name = "#netfuze"; chatnet = "NetFuze"; autojoin = "No"; },
   { name = "#oftc"; chatnet = "OFTC"; autojoin = "No"; },
-  { name = "silc"; chatnet = "SILC"; autojoin = "No"; },
-  { name = "#openxt"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "##c"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "silc"; chatnet = "SILC"; autojoin = "No"; }
 );
 
 aliases = {
