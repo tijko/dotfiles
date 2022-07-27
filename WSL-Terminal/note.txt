@@ -1,0 +1,10 @@
+# The JSON file in directory WSL-Terminal is for just as it would sound like
+# the Terminal.  While shutting down the Terminal session running under
+# WSL environments would exit with a non-zero exit code (for example '121'
+# was the exit-code in Debian Terminal shutdown) This is the return status
+# for running the code on all bash sessions as well for other distributions
+# installed and running under WSL2.
+#
+# Deploy to:
+#
+#  %LOCALAPPDATA\Packages\Microsoft.WindowsTerminalPreview....\LocalState\app.settings.json
