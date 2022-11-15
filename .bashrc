@@ -101,3 +101,6 @@ export PATH=$PATH:/opt/homebrew/bin
 
 [ -z "$TMUX" ] && exec tmux new-session && exit;
 
+export EDITOR=vim
+
+PS1='[\u@\h \W]\$ '
