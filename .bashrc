@@ -81,3 +81,4 @@ export PATH=$PATH:/opt/homebrew/bin
 
 export EDITOR=vim
 
+PS1='[\u@\s \W]\$ '
