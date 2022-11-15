@@ -87,3 +87,7 @@ PS1='[\u@\s \W]\$ '
 
 alias python='python3'
 alias pip='pip3'
+export GROOVY_HOME=/opt/homebrew/opt/groovy/libexec
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
