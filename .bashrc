@@ -97,6 +97,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export PATH=$PATH:/opt/homebrew/bin
+
 [ -z "$TMUX" ] && exec tmux new-session && exit;
 
-export PATH=$PATH:/opt/homebrew/bin
