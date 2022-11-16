@@ -87,6 +87,8 @@ PS1='[\u@\s \W]\$ '
 
 alias python='python3'
 alias pip='pip3'
+alias kubectl='minikube kubectl --'
+
 export GROOVY_HOME=/opt/homebrew/opt/groovy/libexec
 
 # Load Angular CLI autocompletion.
