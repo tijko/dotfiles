@@ -2,6 +2,7 @@ ansible
 ansible-lint
 black
 brotli
+buildkit
 c-ares
 ca-certificates
 cairo
@@ -17,6 +18,7 @@ harfbuzz
 helm
 icu4c
 irssi
+jfrog-cli
 jpeg-turbo
 jsonschema
 kubernetes-cli
@@ -39,6 +41,7 @@ libyaml
 little-cms2
 lz4
 lzo
+maven
 minikube
 mpdecimal
 ncurses
