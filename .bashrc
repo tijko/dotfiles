@@ -2,7 +2,11 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+PS1='[\u@\s \W]\$ '
+
 export SHELL=/bin/bash
+export GROOVY_HOME=/opt/homebrew/opt/groovy/libexec
+export EDITOR=vim
 
 # If not running interactively, don't do anything
 case $- in
@@ -57,6 +61,10 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias python='python3'
+alias pip='pip3'
+alias kubectl='minikube kubectl --'
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -77,19 +85,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$PATH:/opt/homebrew/bin
-
 [ -z "$TMUX" ] && exec tmux new-session && exit;
-
-export EDITOR=vim
-
-PS1='[\u@\s \W]\$ '
-
-alias python='python3'
-alias pip='pip3'
-alias kubectl='minikube kubectl --'
-
-export GROOVY_HOME=/opt/homebrew/opt/groovy/libexec
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
