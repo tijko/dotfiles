@@ -66,9 +66,11 @@ tree
 utf8proc
 wget
 xorgproto
+xray
 xz
 yamllint
 yarn
 zstd
+adoptopenjdk8
 dbeaver-community
 vagrant
