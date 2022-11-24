@@ -23,6 +23,7 @@ irssi
 jfrog-cli
 jpeg-turbo
 jsonschema
+k9s
 krb5
 kubernetes-cli
 lerna
@@ -73,6 +74,7 @@ six
 sqlite
 terraform
 tmux
+tomcat
 tree
 utf8proc
 wget
