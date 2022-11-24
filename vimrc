@@ -1,3 +1,7 @@
+"enable vim-pathogen
+runtime /User/tkonick/.vim/bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
 syntax on
 filetype plugin indent on
 
@@ -12,6 +16,8 @@ filetype plugin indent on
 :set ruler
 
 :let mapleader = ","
+:let g:tagbar_width = 20
+:let g:NERDTreeWinSize = 20
 :inoremap <leader><c-u> <esc>viw<s-U><esc>i
 :inoremap <leader>jk <esc>
 
@@ -22,3 +28,6 @@ filetype plugin indent on
 :nnoremap <leader>n :set tabstop=4 expandtab<cr>
 
 :onoremap p i(
+
+nmap <F8> :TagbarToggle<CR>
+nmap <F9> :NERDTreeToggle<CR>
