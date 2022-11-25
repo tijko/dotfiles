@@ -16,6 +16,7 @@ gdbm
 gettext
 giflib
 glib
+go
 graphite2
 groovy
 harfbuzz
