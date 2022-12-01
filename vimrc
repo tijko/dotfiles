@@ -16,8 +16,8 @@ filetype plugin indent on
 :set ruler
 
 :let mapleader = ","
-:let g:tagbar_width = 20
-:let g:NERDTreeWinSize = 20
+:let g:tagbar_width = 30
+:let g:NERDTreeWinSize = 30
 :inoremap <leader><c-u> <esc>viw<s-U><esc>i
 :inoremap <leader>jk <esc>
 
