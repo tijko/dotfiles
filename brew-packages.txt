@@ -65,6 +65,7 @@ node
 oniguruma
 openjdk
 openssl@1.1
+pcre
 pcre2
 pgcli
 pidof
@@ -81,6 +82,7 @@ readline
 six
 sqlite
 terraform
+the_silver_searcher
 tmux
 tomcat
 tree
