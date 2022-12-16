@@ -8,18 +8,9 @@ export SHELL=/bin/bash
 export GROOVY_HOME=/opt/homebrew/opt/groovy/libexec
 export EDITOR=vim
 
-function assume-roles() {
-    $(~/Projects/aws-tool/bin/aws_creds.sh) || return 1;
-    CREDS=$(aws sts assume-role --profile AWS-PROFILE --role-arn AWS-ROLE-ARN --role-session-name SESSION-NAME) || return 1;
-    AWS_ACCESS_KEY_ID=$(echo $CREDS | jq -r .Credentials.AccessKeyId);
-    AWS_SECRET_ACCESS_KEY=$(echo $CREDS | jq -r .Credentials.SecretAccessKey);
-    AWS_SESSION_TOKEN=$(echo $CREDS | jq -r .Credentials.SessionToken);
-    aws configure --profile AWS-PROFILE set aws_access_key_id $AWS_ACCESS_KEY_ID;
-    aws configure --profile AWS-PROFILE set aws_secret_access_key $AWS_SECRET_ACCESS_KEY;
-    aws configure --profile AWS-PROFILE set aws_session_token $AWS_SESSION_TOKEN;
-}
+# AWS CLI assume role
+alias assume-role=~/Projects/aws-tool/bin/aws_creds.sh;
 
-alias assume-role=assume-roles;
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
