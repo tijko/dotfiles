@@ -42,6 +42,7 @@ jq
 jsonschema
 k9s
 krb5
+krew
 kubernetes-cli
 lerna
 libavif
