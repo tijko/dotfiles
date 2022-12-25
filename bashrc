@@ -5,7 +5,6 @@
 PS1='[\u@\s \W]\$ '
 
 export SHELL=/bin/bash
-export GROOVY_HOME=/opt/homebrew/opt/groovy/libexec
 export EDITOR=vim
 
 # AWS CLI assume role

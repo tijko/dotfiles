@@ -4,6 +4,7 @@ aom
 arangodb
 aws-iam-authenticator
 awscli
+bat
 black
 brotli
 buildkit
@@ -39,6 +40,7 @@ jfrog-cli
 jpeg-turbo
 jpeg-xl
 jq
+jsonnet
 jsonschema
 k9s
 krb5
