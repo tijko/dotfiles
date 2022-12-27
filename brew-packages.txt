@@ -41,6 +41,7 @@ jpeg-turbo
 jpeg-xl
 jq
 jsonnet
+jsonnet-bundler
 jsonschema
 k9s
 krb5
