@@ -103,6 +103,7 @@ python@3.10
 python@3.11
 pyyaml
 readline
+redis
 six
 sqlite
 terraform
