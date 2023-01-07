@@ -21,6 +21,7 @@ gd
 gdbm
 gdk-pixbuf
 gettext
+ghostscript
 giflib
 glib
 go
@@ -33,9 +34,11 @@ helm
 highway
 htop
 icu4c
+imagemagick
 imath
 irssi
 jasper
+jbig2dec
 jfrog-cli
 jpeg-turbo
 jpeg-xl
@@ -50,14 +53,20 @@ kubernetes-cli
 lerna
 libavif
 libcbor
+libde265
 libevent
 libfido2
+libheif
+libidn
 libidn2
+liblqr
 libnghttp2
+libomp
 libpng
 libpq
 libpthread-stubs
 libpython-tabulate
+libraw
 librsvg
 libtiff
 libtool
@@ -87,6 +96,7 @@ node
 oniguruma
 openexr
 openjdk
+openjpeg
 openssl@1.1
 pango
 pcre
@@ -104,7 +114,9 @@ python@3.11
 pyyaml
 readline
 redis
+shared-mime-info
 six
+spring-boot
 sqlite
 terraform
 the_silver_searcher
@@ -114,6 +126,7 @@ tree
 utf8proc
 webp
 wget
+x265
 xorgproto
 xray
 xz
