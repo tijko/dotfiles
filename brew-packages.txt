@@ -23,6 +23,7 @@ gdk-pixbuf
 gettext
 ghostscript
 giflib
+git-sizer
 glib
 go
 graphite2
