@@ -15,6 +15,7 @@ ca-certificates
 cairo
 cowsay
 ctags
+curl
 docutils
 fontconfig
 freetype
@@ -34,6 +35,7 @@ groovy
 gts
 harfbuzz
 helm
+helmfile
 highway
 htop
 httpie
@@ -72,6 +74,7 @@ libpthread-stubs
 libpython-tabulate
 libraw
 librsvg
+libssh2
 libtiff
 libtool
 libunistring
@@ -102,6 +105,7 @@ oniguruma
 openexr
 openjdk
 openjpeg
+openldap
 openssl@1.1
 pango
 pcre
@@ -119,6 +123,8 @@ python@3.11
 pyyaml
 readline
 redis
+rename
+rtmpdump
 shared-mime-info
 six
 spring-boot
@@ -127,6 +133,7 @@ terraform
 the_silver_searcher
 tmux
 tomcat
+tomcat@9
 tree
 utf8proc
 webp
