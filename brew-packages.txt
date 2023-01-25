@@ -125,6 +125,7 @@ readline
 redis
 rename
 rtmpdump
+rust
 shared-mime-info
 six
 spring-boot
