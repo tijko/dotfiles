@@ -45,6 +45,7 @@ imath
 irssi
 jasper
 jbig2dec
+jenv
 jfrog-cli
 jpeg-turbo
 jpeg-xl
@@ -147,6 +148,9 @@ yamllint
 yarn
 zlib
 zstd
+adoptopenjdk11
 adoptopenjdk8
+adoptopenjdk9
 dbeaver-community
+temurin8
 vagrant
