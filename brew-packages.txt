@@ -13,9 +13,11 @@ buildkit
 c-ares
 ca-certificates
 cairo
+cffi
 cowsay
 ctags
 curl
+ddate
 docutils
 fontconfig
 freetype
@@ -24,8 +26,10 @@ gd
 gdbm
 gdk-pixbuf
 gettext
+gh
 ghostscript
 giflib
+git-remote-codecommit
 git-sizer
 glib
 go
@@ -108,6 +112,7 @@ openjdk
 openjpeg
 openldap
 openssl@1.1
+openssl@3
 pango
 pcre
 pcre2
@@ -116,6 +121,7 @@ pidof
 pixman
 pkg-config
 protobuf
+pycparser
 pygments
 python-tabulate
 python-typing-extensions
@@ -127,6 +133,7 @@ redis
 rename
 rtmpdump
 rust
+sceptre
 shared-mime-info
 six
 spring-boot
@@ -152,5 +159,7 @@ adoptopenjdk11
 adoptopenjdk8
 adoptopenjdk9
 dbeaver-community
+gdat
+pycharm
 temurin8
 vagrant

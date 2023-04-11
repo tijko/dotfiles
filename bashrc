@@ -43,7 +43,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias python='python3'
+alias python="python3.11"
 alias pip='pip3'
 
 [ -z "$TMUX" ] && exec tmux new-session && exit;
