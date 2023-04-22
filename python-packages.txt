@@ -68,7 +68,7 @@ packaging                23.0
 pathspec                 0.11.1
 Persistence              4.0.post1
 persistent               5.0
-pip                      23.0.1
+pip                      23.1.1
 platformdirs             3.2.0
 pluggy                   1.0.0
 portalocker              2.7.0
@@ -78,7 +78,7 @@ pyasn1                   0.4.8
 pyasn1-modules           0.2.8
 pycparser                2.21
 PyGithub                 1.58.1
-Pygments                 2.14.0
+Pygments                 2.15.1
 pyhcl                    0.4.4
 PyJWT                    2.6.0
 pylint                   2.17.2
