@@ -29,6 +29,7 @@ gettext
 gh
 ghostscript
 giflib
+git-lfs
 git-remote-codecommit
 git-sizer
 glib
@@ -151,6 +152,7 @@ pyyaml
 readline
 redis
 rename
+repo
 rtmpdump
 rust
 sceptre
