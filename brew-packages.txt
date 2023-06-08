@@ -1,3 +1,4 @@
+abseil
 ansible
 ansible-lint
 aom
@@ -142,6 +143,7 @@ pinentry
 pixman
 pkg-config
 protobuf
+protobuf@21
 pycparser
 pygments
 python-tabulate

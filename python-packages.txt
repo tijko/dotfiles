@@ -73,7 +73,7 @@ platformdirs             3.2.0
 pluggy                   1.0.0
 portalocker              2.7.0
 Products.MIMETools       4.0
-protobuf                 4.21.12
+protobuf                 4.23.2
 pyasn1                   0.4.8
 pyasn1-modules           0.2.8
 pycparser                2.21
@@ -109,7 +109,7 @@ tomli                    2.0.1
 tomlkit                  0.11.7
 tox                      4.4.8
 transaction              3.1.0
-typing_extensions        4.6.2
+typing_extensions        4.6.3
 ujson                    1.35
 uritemplate              3.0.1
 urllib3                  1.25.11

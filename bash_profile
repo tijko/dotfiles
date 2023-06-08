@@ -5,6 +5,9 @@ export CURL_HOME="/opt/homebrew/opt/curl/bin"
 export M2_HOME="$HOME/Development/apache-maven-3.8.6"
 export GROOVY_HOME="/opt/homebrew/opt/groovy/libexec"
 export PYTHON_BIN="/opt/homebrew/opt/python@3.11/bin"
+export CLOUDSDK_PYTHON=python3
+
+export HOMEBREW_NO_ENV_HINTS
 
 export PATH="$CURL_HOME:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH:$M2_HOME/bin:$HOME/.krew/bin:$PYTHON_BIN:/opt/homebrew/Cellar/openssl\@1.1/1.1.1s/bin/"
 
@@ -31,3 +34,6 @@ jenv() {
     command jenv "$command" "$@";;
   esac
 }
+
+
+source "$(brew --prefix)/share/google-cloud-sdk/path.bash.inc"
