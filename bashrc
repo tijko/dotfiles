@@ -8,7 +8,7 @@ export SHELL=/bin/bash
 export EDITOR=vim
 
 # AWS CLI assume role
-alias assume-role=~/Projects/aws-tool/bin/aws_creds.sh;
+alias assume-role=~/Development/aws-tool/bin/aws_creds.sh;
 
 # If not running interactively, don't do anything
 case $- in
@@ -42,7 +42,7 @@ alias ls='ls -G '
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-
+alias satellite='ssh tijko@satellite'
 alias python="python3.11"
 alias pip='pip3'
 
