@@ -1,54 +1,67 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
-PS1='[\u@\s \W]\$ '
-
-export SHELL=/bin/bash
-export EDITOR=vim
-
-# AWS CLI assume role
-alias assume-role=~/Projects/aws-tool/bin/aws_creds.sh;
+#
+# ~/.bashrc
+#
 
 # If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
+[[ $- != *i* ]] && return
+export TERM=screen-256color
+[[ -z "$TMUX" ]] && exec tmux 
 
-# append to the history file, don't overwrite it
-shopt -s histappend
-# check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
+export SDL_AUDIODRIVER=alsa
+export ANDROID_SDK_ROOT=/opt/android-sdk
+#export JAVA_HOME=/usr/lib/jvm/default/bin
 
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=2000
-HISTFILESIZE=4000
-# don't put duplicate lines or lines starting with space in the history.
-# See bash(1) for more options
-HISTCONTROL=ignoreboth
-# Timestamp
-HISTTIMEFORMAT="%D %T "
+alias bbc='nohup mplayer -playlist $(cat ~/radio/bbc.pls) > /dev/null &'
+alias npr='nohup mplayer -playlist ~/radio/opb-radio.m3u > /dev/null &'
+alias jazz='(nohup mplayer -playlist ~/radio/wbgo.m3u > /dev/null &)'
+alias off='pkill mplayer'
+alias ipof='~/.ipof $1'
+alias pings='~/.pingsy.sh'
+alias mute='~/.mute_vol &>/dev/null'
+alias music='~/.music_vol &>/dev/null'
+alias bumpit='~/.bump_it &>/dev/null'
+alias netflix='~/.netflix_vol &>/dev/null'
+alias flash='~/.flash_kill'
+alias join-net='sudo ~/.foreign_network'
+alias scan='sudo iwlist wlp6s0 scan > wifi.txt'
+alias up='sudo ip link set wlp6s0 up'
+alias copy='xclip -o | xclip -i -selection clipboard'
+alias ip='ip -color=auto'
+alias ls='ls --color=auto'
+alias mac='ssh tkonick@192.168.1.152'
 
-# make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+function cd
+{
+    builtin cd $1
+    pwd > ~/.cdir
+}
 
-# colored GCC warnings and errors
-export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+PS1='[\u@\h \W]\$ '
+export EDITOR='vim'
+export CVSROOT=~/cvsroot
 
-# some more ls aliases
-alias ls='ls -G '
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+if [ -f ~/.cdir ]
+then
+    cd $(cat ~/.cdir)
+fi
 
-alias python="python3.11"
-alias pip='pip3'
+export HISTSIZE=7000
+export HISTCONTROL=ignoredups:erasedups
+export HISTTIMEFORMAT='%F %T: '
 
-[ -z "$TMUX" ] && exec tmux new-session && exit;
+# added by pipx (https://github.com/pipxproject/pipx)
+export PATH="/home/tijko/.local/bin:$PATH:~/.gem/ruby/2.7.0/bin"
+export GEM_PATH=$GEM_PATH:"~/.gem/ruby/2.7.0/bin"
 
-# Load Angular CLI autocompletion.
+# Ruby version 3.0.0
+export PATH=$PATH:"~/.gem/ruby/3.0.0/bin"
+# Groovy
+export PATH=$PATH:"$HOME/apache-groovy/groovy-4.0.6/bin"
+# Rust
+export PATH=$PATH:"$HOME/.cargo/bin"
+
+# XXX Add Haskell Cabal "installdirs"
+# `
+source <(kubectl completion bash)
+#
 source <(ng completion script)
-# Load Kubectl CLI autocompletion
-source <(kubectl completion bash) 
