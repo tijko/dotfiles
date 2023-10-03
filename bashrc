@@ -64,4 +64,3 @@ export PATH=$PATH:"$HOME/.cargo/bin"
 # `
 source <(kubectl completion bash)
 #
-source <(ng completion script)
