@@ -9,3 +9,4 @@ export TZ
 TZ="America/New_York"; export TZ
 
 export AWS_PROFILE="tijko"
+export AWS_DEFAULT_PROFILE="tijko"
