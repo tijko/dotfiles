@@ -60,6 +60,9 @@ export PATH=$PATH:"$HOME/apache-groovy/groovy-4.0.6/bin"
 # Rust
 export PATH=$PATH:"$HOME/.cargo/bin"
 
+# MariaDB
+export PATH=$PATH:"/usr/local/mysql/bin"
+
 # XXX Add Haskell Cabal "installdirs"
 # `
 source <(kubectl completion bash)
