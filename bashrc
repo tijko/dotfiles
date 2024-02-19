@@ -11,6 +11,10 @@ export SDL_AUDIODRIVER=alsa
 export ANDROID_SDK_ROOT=/opt/android-sdk
 #export JAVA_HOME=/usr/lib/jvm/default/bin
 
+# cp -i and mv -i
+alias cp='cp -i'
+alias mv='mv -i'
+#
 alias bbc='nohup mplayer -playlist $(cat ~/radio/bbc.pls) > /dev/null &'
 alias npr='nohup mplayer -playlist ~/radio/opb-radio.m3u > /dev/null &'
 alias jazz='(nohup mplayer -playlist ~/radio/wbgo.m3u > /dev/null &)'
