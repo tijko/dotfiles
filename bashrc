@@ -11,6 +11,11 @@ export SDL_AUDIODRIVER=alsa
 export ANDROID_SDK_ROOT=/opt/android-sdk
 #export JAVA_HOME=/usr/lib/jvm/default/bin
 
+if [[ -f /home/tijko/.Xmodmap ]]
+then
+    $(xmodmap "/home/tijko/.Xmodmap");
+fi
+
 # cp -i and mv -i
 alias cp='cp -i'
 alias mv='mv -i'
