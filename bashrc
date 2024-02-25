@@ -76,3 +76,5 @@ export PATH=$PATH:"/usr/local/mysql/bin"
 # `
 source <(kubectl completion bash)
 #
+# kubectl krew
+export PATH=$PATH:"$HOME/.krew/bin"
