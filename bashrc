@@ -72,8 +72,9 @@ export PATH=$PATH:"$HOME/.cargo/bin"
 # MariaDB
 export PATH=$PATH:"/usr/local/mysql/bin"
 
-# XXX Add Haskell Cabal "installdirs"
-# `
+# Haskell Cabal "installdirs"
+export PATH=$PATH:"$HOME/.cabal/bin"
+
 source <(kubectl completion bash)
 #
 # kubectl krew
