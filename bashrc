@@ -19,7 +19,22 @@ fi
 # cp -i and mv -i
 alias cp='cp -i'
 alias mv='mv -i'
+
+# cabal-dynamic-install ghc-options 
+function cabal-dynamic-install() {
+    if [[ $# -le 0 ]]
+    then
+        echo '  [Required] - Install Package-Name!'
+        echo '  [help] try > ghc-pkg list {pkg-name}'
+        exit 1
+    fi
+
+    $(cabal install $1 --ghc-options=-dynamic); 
+}
+
+alias cabal-install='cabal-dynamic-install'
 #
+
 alias bbc='nohup mplayer -playlist $(cat ~/radio/bbc.pls) > /dev/null &'
 alias npr='nohup mplayer -playlist ~/radio/opb-radio.m3u > /dev/null &'
 alias jazz='(nohup mplayer -playlist ~/radio/wbgo.m3u > /dev/null &)'
@@ -77,5 +92,5 @@ export PATH=$PATH:"$HOME/.cabal/bin"
 
 source <(kubectl completion bash)
 #
-# kubectl krew
+# Kubectl Krew
 export PATH=$PATH:"$HOME/.krew/bin"
