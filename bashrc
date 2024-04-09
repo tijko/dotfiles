@@ -1,6 +1,6 @@
-#
-# ~/.bashrc
-#
+#!/usr/bin/env bash
+
+# Bash-Run-Commands (.bashrc)
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -8,13 +8,9 @@ export TERM=screen-256color
 [[ -z "$TMUX" ]] && exec tmux 
 
 export SDL_AUDIODRIVER=alsa
-export ANDROID_SDK_ROOT=/opt/android-sdk
 #export JAVA_HOME=/usr/lib/jvm/default/bin
 
-if [[ -f /home/tijko/.Xmodmap ]]
-then
-    $(xmodmap "/home/tijko/.Xmodmap");
-fi
+[[ -f /home/tijko/.Xmodmap ]] && xmodmap "/home/tijko/.Xmodmap"
 
 # cp -i and mv -i
 alias cp='cp -i'
@@ -33,7 +29,6 @@ function cabal-dynamic-install() {
 }
 
 alias cabal-install='cabal-dynamic-install'
-#
 
 alias bbc='nohup mplayer -playlist $(cat ~/radio/bbc.pls) > /dev/null &'
 alias npr='nohup mplayer -playlist ~/radio/opb-radio.m3u > /dev/null &'
@@ -52,7 +47,7 @@ alias up='sudo ip link set wlp6s0 up'
 alias copy='xclip -o | xclip -i -selection clipboard'
 alias ip='ip -color=auto'
 alias ls='ls --color=auto'
-alias mac='ssh tkonick@192.168.1.152'
+alias paste='xclip -o --silent'
 
 function cd
 {
@@ -64,10 +59,7 @@ PS1='[\u@\h \W]\$ '
 export EDITOR='vim'
 export CVSROOT=~/cvsroot
 
-if [ -f ~/.cdir ]
-then
-    cd $(cat ~/.cdir)
-fi
+[[ -f ~/.cdir ]] && cd $(cat ~/.cdir)
 
 export HISTSIZE=7000
 export HISTCONTROL=ignoredups:erasedups
