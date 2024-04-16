@@ -73,7 +73,7 @@ PS1='[\u@\h \W]\$ '
 export EDITOR='vim'
 export CVSROOT=~/cvsroot
 
-[[ -f ~/.cdir ]] && cd $(cat ~/.cdir)
+[[ -f ~/.cdir ]] && cd "$(cat "$HOME/.cdir")" || exit
 
 export HISTSIZE=7000
 export HISTCONTROL=ignoredups:erasedups
