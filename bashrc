@@ -5,9 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 export TERM=screen-256color
-# VSCode TermEmulator fails
-transset-df 0.75 --id "$WINDOWID" 2&>/dev/null
-[[ -z "$TMUX" ]] && exec tmux 
+[[ -z "$TMUX" ]] && exec tmux -v
+transset --id "$WINDOWID" 0.75 2&>/dev/null
 
 export SDL_AUDIODRIVER=alsa
 #export JAVA_HOME=/usr/lib/jvm/default/bin
@@ -18,7 +17,7 @@ export SDL_AUDIODRIVER=alsa
 alias cp='cp -i'
 alias mv='mv -i'
 
-# cabal-dynamic-install ghc-options 
+# cabal-dynamic-install ghc-options
 function cabal-dynamic-install() {
     if [[ $# -le 0 ]]
     then
@@ -27,7 +26,7 @@ function cabal-dynamic-install() {
         exit 1
     fi
 
-    $(cabal install $1 --ghc-options=-dynamic); 
+    $(cabal install "$1" --ghc-options=-dynamic);
 }
 
 alias cabal-install='cabal-dynamic-install'
