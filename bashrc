@@ -45,10 +45,10 @@ function getip {
     fi
 
     target_address=$1;
-    echo $(~/.ipof $target_address)
+    ~/.ipof "$target_address"
 }
 
-alias ipof='~/.ipof $1'
+alias ipof='getip'
 alias pings='~/.pingsy.sh'
 alias mute='~/.mute_vol &>/dev/null'
 alias music='~/.music_vol &>/dev/null'
