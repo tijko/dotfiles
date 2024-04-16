@@ -65,7 +65,7 @@ alias paste='xclip -o --silent'
 
 function cd
 {
-    builtin cd $1
+    builtin cd "$1" || exit 1
     pwd > ~/.cdir
 }
 
