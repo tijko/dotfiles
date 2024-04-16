@@ -26,7 +26,7 @@ function cabal-dynamic-install() {
         exit 1
     fi
 
-    $(cabal install "$1" --ghc-options=-dynamic);
+    cabal install "$1" --ghc-options=-dynamic
 }
 
 alias cabal-install='cabal-dynamic-install'
@@ -35,6 +35,19 @@ alias bbc='nohup mplayer -playlist $(cat ~/radio/bbc.pls) > /dev/null &'
 alias npr='nohup mplayer -playlist ~/radio/opb-radio.m3u > /dev/null &'
 alias jazz='(nohup mplayer -playlist ~/radio/wbgo.m3u > /dev/null &)'
 alias off='pkill mplayer'
+
+function getip {
+    if [[ $# -lt 1 ]]
+    then
+        echo 'ipof: Must Provide Target URL'
+        echo 'Usage: ipof TARGET'
+        exit 1;
+    fi
+
+    target_address=$1;
+    echo $(~/.ipof $target_address)
+}
+
 alias ipof='~/.ipof $1'
 alias pings='~/.pingsy.sh'
 alias mute='~/.mute_vol &>/dev/null'
