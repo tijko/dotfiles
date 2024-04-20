@@ -63,17 +63,10 @@ alias ip='ip -color=auto'
 alias ls='ls --color=auto'
 alias paste='xclip -o --silent'
 
-function cd
-{
-    builtin cd "$1" || exit 1
-    pwd > ~/.cdir
-}
 
 PS1='[\u@\h \W]\$ '
 export EDITOR='vim'
 export CVSROOT=~/cvsroot
-
-[[ -f ~/.cdir ]] && cd "$(cat "$HOME/.cdir")" || exit
 
 export HISTSIZE=7000
 export HISTCONTROL=ignoredups:erasedups
