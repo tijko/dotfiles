@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 export TERM=screen-256color
-[[ -z "$TMUX" ]] && exec tmux -v
+[[ -z "$TMUX" ]] && exec tmux
 transset --id "$WINDOWID" 0.75 2&>/dev/null
 
 export SDL_AUDIODRIVER=alsa
