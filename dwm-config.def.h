@@ -7,9 +7,9 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 #define ICONSIZE 16   /* icon size */
 #define ICONSPACING 5 /* space between icon and title */
-static const char *fonts[]          = { "Font Awesome 6 Brands Regular:size=11",
-                                        "JetBrainsMonoNL Nerd Font Propo:size=11};
-static const char dmenufont[]       = "Inconsolata Nerd Font Propo:size=10";
+static const char *fonts[]          = { "Font Awesome 6 Brands Regular:size=14:antialias=true",
+                                        "JetBrainsMonoNL Nerd Font Propo:size=14:antialias=true"};
+static const char dmenufont[]       = "Inconsolata Nerd Font Propo:size=12:antialias=true";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -42,9 +42,9 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "[]= \uf303",      tile },    /* first entry is default */
+	{ "><> \uf303",      NULL },    /* no layout function means floating behavior */
+	{ "[M] \uf303",      monocle },
 };
 
 /* key definitions */
