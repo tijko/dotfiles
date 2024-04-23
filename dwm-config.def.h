@@ -7,7 +7,8 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 #define ICONSIZE 16   /* icon size */
 #define ICONSPACING 5 /* space between icon and title */
-static const char *fonts[]          = { "Font Awesome 6 Brands Regular:size=11:antialias=true",
+static const char *fonts[]          = { "DejaVuSansMono:size=12",
+                                        "Font Awesome 6 Brands Regular:size=11:antialias=true",
                                         "JetBrainsMonoNL Nerd Font Propo:size=11:antialias=true"};
 static const char dmenufont[]       = "Inconsolata Nerd Font Propo:size=11:antialias=true";
 static const char col_gray1[]       = "#222222";
@@ -35,7 +36,7 @@ static const Rule rules[] = {
 };
 
 /* layout(s) */
-static const float mfact     = 0.65; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.75; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
