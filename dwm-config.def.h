@@ -8,14 +8,14 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 #define ICONSIZE 16   /* icon size */
 #define ICONSPACING 2 /* space between icon and title */
-static const char *fonts[]          = { "DejaVuSansM Nerd Font Mono:antialias=true:style=Regular:size=12",
+static const char *fonts[]          = { "DejaVuSans Mono:antialias=true:style=Regular:size=12",
                                         "JetBrainsMono Nerd Font Propo:antialias=true:style=Regular:size=12",
                                         "Font Awesome 6 Free:antialias=true:style=Regular:size=12",
                                         "Font Awesome 6 Brands:antialias=true:style=Regular:size=12",
                                         "Font Awesome 6 Brands:antialias=true:style=Solid:size=12",
 										"SauceCodePro Nerd Font Mono:antialias=true:style=Regular:size=12"};
 
-static const char dmenufont[]       = "InconsolataGo Nerd Font Propo:antialias=true:style=Regular:size=12";
+static const char dmenufont[]       = "DejaVuSans Mono:antialias=true:style=Regular:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
