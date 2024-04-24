@@ -7,7 +7,7 @@ const unsigned int interval = 1000;
 static const char unknown_str[] = "n/a";
 
 /* maximum output string length */
-#define MAXLEN 4196
+#define MAXLEN 4096 
 
 /*
  * function             description                     argument (example)
@@ -62,10 +62,10 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ datetime,    "%s | ",                         "%F %T" },
-	{ netspeed_rx, "\uf1eb IN %s ",                "wlp6s0" },
-    { netspeed_tx, "OUT %s ",                      "wlp6s0" },
-	{ disk_perc,   "\uec19 %s% ",               "/dev/sda1" },
-	{ cpu_perc,    "\ueaaf %s% ",                      NULL },
-	{ ram_perc,    "\uebaa %s% ",                      NULL }
+	{ datetime,    " \ueab0  %s | ",                      "%F %T" },
+	{ netspeed_rx, "\uf1eb IN %s ",                      "wlp6s0" },
+    { netspeed_tx, "OUT %s  ",                           "wlp6s0" },
+	{ disk_perc,   "\ueace  %s%%  ",                   "/dev/sda1" },
+	{ cpu_perc,    "\ueacd  %s%% ",                          NULL },
+	{ ram_perc,    "\uec19  %s%% ",                          NULL }
 };

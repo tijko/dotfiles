@@ -1,33 +1,31 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int gappx     = 2;
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 #define ICONSIZE 16   /* icon size */
 #define ICONSPACING 2 /* space between icon and title */
-static const char *fonts[]          = { "Hack Nerd Font:pixelsize=10:antialias=true:autohint=true", 
-										"icons-in-terminal:pixelsize=14:antialias=true:autohint=true", 
-										"Nerd-Symbols:pixelsize=14:antialias=true:autohint=true" }; 
-/*
-static const char *fonts[]          = { "DejaVuSansMono:size=12",
-                                        "JetBrainsMonoNL Nerd Font Propo:size=12:antialias=true",
-                                        "Font Awesome 6 Free:style=Regular:size=12:antialias=true",
-                                        "Font Awesome 6 Brands:style=Regular:size=12:antialias=true",
-                                        "Font Awesome 6 Brands:style=Solid:size=12:antialias=true",
-										"SauceCodePro Nerd Font Mono:size=12:antialias=true"};
-*/
-static const char dmenufont[]       = "Inconsolata Nerd Font Propo:size=12:antialias=true";
+static const char *fonts[]          = { "DejaVuSansM Nerd Font Mono:antialias=true:style=Regular:size=12",
+                                        "JetBrainsMono Nerd Font Propo:antialias=true:style=Regular:size=12",
+                                        "Font Awesome 6 Free:antialias=true:style=Regular:size=12",
+                                        "Font Awesome 6 Brands:antialias=true:style=Regular:size=12",
+                                        "Font Awesome 6 Brands:antialias=true:style=Solid:size=12",
+										"SauceCodePro Nerd Font Mono:antialias=true:style=Regular:size=12"};
+
+static const char dmenufont[]       = "InconsolataGo Nerd Font Propo:antialias=true:style=Regular:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
+static const char col_solr[]        = "#93a1a1";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeNorm] = { col_gray3, col_gray1, col_solr},
+	[SchemeSel]  = { col_gray4, col_cyan,  col_solr  },
 };
 
 /* tagging */
