@@ -62,10 +62,10 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ datetime,    " \ueab0  %s | ",                      "%F %T" },
+	{ datetime,    " \ueab0 %s | ",                      "%F %T" },
 	{ netspeed_rx, "\uf1eb IN %s ",                      "wlp6s0" },
-    { netspeed_tx, "OUT %s  ",                           "wlp6s0" },
-	{ disk_perc,   "\ueace  %s%%  ",                   "/dev/sda1" },
-	{ cpu_perc,    "\ueacd  %s%% ",                          NULL },
-	{ ram_perc,    "\uec19  %s%% ",                          NULL }
+    { netspeed_tx, "OUT %s ",                           "wlp6s0" },
+	{ disk_perc,   "\ueace %s%% ",                   "/dev/sda1" },
+	{ cpu_perc,    "\ueacd %s%% ",                          NULL },
+	{ ram_perc,    "\uec19 %s%% ",                          NULL }
 };
