@@ -1,36 +1,18 @@
 servers = (
   { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
-  {
-    address = "ssl.efnet.org";
-    chatnet = "EFNet";
-    port = "9999";
-    use_tls = "yes";
-  },
-  {
-    address = "irc.esper.net";
-    chatnet = "EsperNet";
-    port = "6697";
-    use_tls = "yes";
-    tls_verify = "yes";
-  },
+  { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
+  { address = "irc.esper.net"; chatnet = "EsperNet"; port = "6667"; },
   {
     address = "chat.freenode.net";
     chatnet = "Freenode";
-    port = "6697";
-    use_tls = "yes";
-    tls_verify = "yes";
+    port = "6667";
   },
   {
     address = "irc.gamesurge.net";
     chatnet = "GameSurge";
     port = "6667";
   },
-  {
-    address = "eu.irc6.net";
-    chatnet = "IRCnet";
-    port = "6667";
-    use_tls = "yes";
-  },
+  { address = "eu.irc6.net"; chatnet = "IRCnet"; port = "6667"; },
   { address = "open.ircnet.net"; chatnet = "IRCnet"; port = "6667"; },
   {
     address = "irc.ircsource.net";
@@ -38,38 +20,18 @@ servers = (
     port = "6667";
   },
   { address = "irc.netfuze.net"; chatnet = "NetFuze"; port = "6667"; },
+  { address = "irc.oftc.net"; chatnet = "OFTC"; port = "6667"; },
   {
-    address = "irc.oftc.net";
-    chatnet = "OFTC";
-    port = "6697";
-    use_tls = "yes";
-    tls_verify = "yes";
-  },
-  { 
     address = "irc.quakenet.org";
     chatnet = "QuakeNet";
     port = "6667";
   },
-  {
-    address = "irc.rizon.net";
-    chatnet = "Rizon";
-    port = "6697";
-    use_tls = "yes";
-    tls_verify = "yes";
-  },
+  { address = "irc.rizon.net"; chatnet = "Rizon"; port = "6667"; },
   { address = "silc.silcnet.org"; chatnet = "SILC"; port = "706"; },
-  { 
+  {
     address = "irc.undernet.org";
     chatnet = "Undernet";
     port = "6667";
-  },
-  {
-    address = "irc.freenode.net";
-    chatnet = "freenode";
-    port = "6667";
-    use_tls = "no";
-    tls_verify = "no";
-    autoconnect = "yes";
   }
 );
 
@@ -80,7 +42,7 @@ chatnets = {
     max_msgs = "20";
     max_whois = "30";
   };
-  EFNet = { 
+  EFNet = {
     type = "IRC";
     max_kicks = "1";
     max_msgs = "4";
@@ -104,7 +66,7 @@ chatnets = {
     max_msgs = "1";
     max_whois = "1";
   };
-  IRCnet = { 
+  IRCnet = {
     type = "IRC";
     max_kicks = "1";
     max_msgs = "1";
@@ -129,7 +91,7 @@ chatnets = {
     max_msgs = "1";
     max_whois = "1";
   };
-  Rizon = { 
+  Rizon = {
     type = "IRC";
     max_kicks = "1";
     max_msgs = "1";
@@ -142,11 +104,6 @@ chatnets = {
     max_msgs = "1";
     max_whois = "1";
   };
-  freenode = {
-    type = "IRC";
-    nick = "tijko";
-    autosendcmd = "/msg nickserv identify georgia;wait 4000";
-  };
 };
 
 channels = (
@@ -158,9 +115,7 @@ channels = (
   { name = "#ircsource"; chatnet = "IRCSource"; autojoin = "No"; },
   { name = "#netfuze"; chatnet = "NetFuze"; autojoin = "No"; },
   { name = "#oftc"; chatnet = "OFTC"; autojoin = "No"; },
-  { name = "silc"; chatnet = "SILC"; autojoin = "No"; },
-  { name = "#openxt"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "##c"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "silc"; chatnet = "SILC"; autojoin = "No"; }
 );
 
 aliases = {
@@ -416,7 +371,16 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Unknown"; user_name = "tijko"; nick = "tijko"; };
+  core = {
+    real_name = "Unknown";
+    user_name = "tijko";
+    nick = "tijko";
+    recode_autodetect_utf8 = "yes";
+    recode_fallback = "UTF-8";
+    recode = "yes";
+    recode_out_default_charset = "UTF-8";
+    recode_transliterate = "yes";
+  };
   "fe-text" = { actlist_sort = "refnum"; };
-  "fe-common/core" = { theme = "default.theme"; };
+  "fe-common/core" = { term_charset = "UTF-8"; };
 };
