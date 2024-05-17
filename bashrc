@@ -93,3 +93,9 @@ source <(kubectl completion bash)
 #
 # Kubectl Krew
 export PATH=$PATH:"$HOME/.krew/bin"
+
+# XXX Valgrind-Dev
+export PATH="/usr/local/bin/bin":$PATH
+
+# XXX NGinx-AIO profiling
+export PATH="/sbin/nginx":$PATH
