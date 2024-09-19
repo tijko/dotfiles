@@ -99,3 +99,8 @@ export PATH="/usr/local/bin/bin":$PATH
 
 # XXX NGinx-AIO profiling
 export PATH="/sbin/nginx":$PATH
+
+# Go
+export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
+export PATH=$PATH:$GOBIN
