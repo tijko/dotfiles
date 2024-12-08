@@ -62,6 +62,7 @@ alias copy='xclip -o | xclip -i -selection clip'
 alias ip='ip -color=auto'
 alias ls='ls --color=auto'
 alias paste='xclip -o --silent'
+alias rm='python .remove-cmd.py $1 $2'
 
 
 PS1='[\u@\h \W]\$ '
