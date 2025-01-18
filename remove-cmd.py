@@ -27,7 +27,7 @@ def remove_cmd(fp, args):
 
 if __name__ == '__main__':
     args = sys.argv
-    if len(args) < 2:
+    if len(args) < 3:
         print('Error input arguments')
         sys.exit(0)
     sanitize_input(args)
