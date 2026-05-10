@@ -90,16 +90,11 @@ export PATH=$PATH:"/usr/local/mysql/bin"
 # Haskell Cabal "installdirs"
 export PATH=$PATH:"$HOME/.cabal/bin"
 
-source <(kubectl completion bash)
-#
-# Kubectl Krew
-export PATH=$PATH:"$HOME/.krew/bin"
-
 # XXX Valgrind-Dev
 export PATH="/usr/local/bin/bin":$PATH
 
-# XXX NGinx-AIO profiling
-export PATH="/sbin/nginx":$PATH
+# DMesg
+alias dmesg="sudo dmesg --time-format iso"
 
 # Go
 export GOPATH="$HOME/go"
