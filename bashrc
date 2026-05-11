@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Bash-Run-Commands (.bashrc)
-
+#
+#
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 export TERM=screen-256color
